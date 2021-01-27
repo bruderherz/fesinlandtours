@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document sans nom</title>
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" media="all" />
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                $('#wrapper').dialog({
+                    autoOpen: false,
+                    title: 'Basic Dialog'
+                });
+                $('#opener').click(function() {
+                    $('#wrapper').dialog('open');
+//                  return false;
+                });
+            });
+        </script>
+</head>
+
+<body>
+
+ 
+
+
+<button id="opener">Open the dialog</button>
+<div id="wrapper">
+    <p>Some txt goes here</p>
+</div>
+
+
+
+</body>
+</html>
